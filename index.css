@@ -1,1 +1,9 @@
+<<<<<<< HEAD
 
+=======
+.ordered-list,
+.unordered-list {
+    display: flex;
+    gap: 30px;
+}
+>>>>>>> c444141 (website)
