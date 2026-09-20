@@ -334,7 +334,7 @@ A one-page, Batman-themed website announcing two workshops (**ShapeWaves** and *
           <dl class="facts">
             <dt>Conducted by</dt><dd>SRM Team <span class="rc">ROBOCON</span></dd>
             <dt>Venue</dt><dd>TP Ganeshan Auditorium</dd>
-            <dt>Date and time</dt><dd>To be announced</dd>
+            <dt>Date and time</dt><dd>27 September 2026</dd>
           </dl>
         </article>
       </div>
