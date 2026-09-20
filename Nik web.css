@@ -1,315 +1,352 @@
- * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #fffaf7;
-            color: #333;
-            line-height: 1.6;
-        }
-        /* Decorative background */
-
-        
-
-        /* Navigation */
-
-        header {
-            background: rgba(255, 250, 247, 0.95);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 22px 9%;
-            border-bottom: 1px solid #f0dfd9;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-
-        .logo {
-            font-size: 25px;
-            font-weight: bold;
-            color: #7d4e4e;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #555;
-            margin-left: 28px;
-            font-size: 15px;
-        }
-
-        nav a:hover {
-            color: #a86565;
-        }
-
-
-        /* Home */
-
-        .home {
-            min-height: 88vh;
-            display: flex;
-            align-items: center;
-            padding: 70px 12%;
-            position: relative;
-        }
-
-        .home-content {
-            max-width: 750px;
-        }
-
-        .small-text {
-            color: #a86565;
-            font-size: 17px;
-            margin-bottom: 12px;
-        }
-
-        .home h1 {
-            font-size: 65px;
-            color: #493838;
-            margin-bottom: 10px;
-        }
-
-        .home h2 {
-            font-size: 25px;
-            font-weight: normal;
-            color: #7d6868;
-            margin-bottom: 25px;
-        }
-
-        .home p {
-            max-width: 650px;
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 30px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 12px 25px;
-            background: #8f6060;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            margin-right: 10px;
-        }
-
-        .button:hover {
-            background: #704949;
-        }
-
-        .button-light {
-            background: transparent;
-            color: #8f6060;
-            border: 1px solid #b98b8b;
-        }
-
-        .button-light:hover {
-            color: white;
-        }
-
-
-        /* Common sections */
-
-        section {
-            padding: 90px 12%;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 45px;
-        }
-
-        .section-title h2 {
-            font-size: 35px;
-            color: #493838;
-        }
-
-        .section-title p {
-            color: #888;
-            margin-top: 8px;
-        }
-
-
-        /* About */
-
-        .about {
-            background: #f8eee9;
-        }
-
-        .about-box {
-            max-width: 850px;
-            margin: auto;
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            border: 1px solid #eedbd4;
-            text-align: center;
-        }
-
-        .about-box p {
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 15px;
-        }
-
-
-        /* Skills */
-
-        .skills-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 18px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .skill {
-            background: white;
-            border: 1px solid #eadbd6;
-            padding: 15px 25px;
-            border-radius: 25px;
-            color: #6d5555;
-            font-size: 16px;
-        }
-
-        .skill:hover {
-            background: #f5e5df;
-        }
-
-
-        /* Education */
-
-        .education {
-            background: #f4f6ef;
-        }
-
-        .education-box {
-            max-width: 850px;
-            margin: auto;
-            background: white;
-            padding: 35px;
-            border-left: 5px solid #9eae8f;
-            border-radius: 10px;
-        }
-
-        .education-box h3 {
-            font-size: 24px;
-            color: #4d5947;
-            margin-bottom: 8px;
-        }
-
-        .education-box p {
-            color: #666;
-            margin-bottom: 5px;
-        }
-
-
-        /* Goals */
-
-        .goals-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 25px;
-        }
-
-        .goal {
-            width: 250px;
-            padding: 30px 25px;
-            background: white;
-            border: 1px solid #eadbd6;
-            border-radius: 12px;
-            text-align: center;
-        }
-
-        .goal span {
-            font-size: 32px;
-        }
-
-        .goal h3 {
-            margin: 12px 0;
-            color: #634b4b;
-        }
-
-        .goal p {
-            color: #777;
-            font-size: 15px;
-        }
-
-
-        /* Contact */
-
-        .contact {
-            background: #f8eee9;
-            text-align: center;
-        }
-
-        .contact p {
-            color: #666;
-            font-size: 18px;
-            margin-bottom: 25px;
-        }
-
-        .contact a {
-            color: #8f6060;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-
-
-        /* Footer */
-
-        footer {
-            text-align: center;
-            padding: 25px;
-            background: #493838;
-            color: white;
-            font-size: 14px;
-        }
-
-
-        /* Mobile */
-
-        @media (max-width: 700px) {
-
-            header {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            nav a {
-                margin: 0 8px;
-            }
-
-            .home {
-                padding: 70px 8%;
-            }
-
-            .home h1 {
-                font-size: 48px;
-            }
-
-            .home h2 {
-                font-size: 21px;
-            }
-
-            .home p {
-                font-size: 16px;
-            }
-
-            section {
-                padding: 70px 8%;
-            }
-
-            .about-box {
-                padding: 25px;
-            }
-
-        }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf7;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Navigation */
+
+header {
+    background: rgba(255, 250, 247, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 9%;
+    border-bottom: 1px solid #f0dfd9;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #7d4e4e;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 28px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #a86565;
+}
+
+
+/* Home */
+
+.home {
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+
+    /* NEW - PHOTO */
+    justify-content: space-between;
+    gap: 50px;
+
+    padding: 70px 12%;
+    position: relative;
+}
+
+.home-content {
+    max-width: 750px;
+}
+
+.small-text {
+    color: #a86565;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.home h1 {
+    font-size: 65px;
+    color: #493838;
+    margin-bottom: 10px;
+}
+
+.home h2 {
+    font-size: 25px;
+    font-weight: normal;
+    color: #7d6868;
+    margin-bottom: 25px;
+}
+
+.home p {
+    max-width: 650px;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #8f6060;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.button:hover {
+    background: #704949;
+}
+
+.button-light {
+    background: transparent;
+    color: #8f6060;
+    border: 1px solid #b98b8b;
+}
+
+.button-light:hover {
+    color: white;
+}
+
+
+/* NEW - PHOTO
+   Photo on the right side of Home section */
+
+.home-image {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+}
+
+.home-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    /* Makes the photo round */
+    border-radius: 50%;
+
+    /* Border around photo */
+    border: 5px solid #eadbd6;
+}
+
+
+/* Common sections */
+
+section {
+    padding: 90px 12%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 35px;
+    color: #493838;
+}
+
+.section-title p {
+    color: #888;
+    margin-top: 8px;
+}
+
+
+/* About */
+
+.about {
+    background: #f8eee9;
+}
+
+.about-box {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #eedbd4;
+    text-align: center;
+}
+
+.about-box p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+/* Skills */
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.skill {
+    background: white;
+    border: 1px solid #eadbd6;
+    padding: 15px 25px;
+    border-radius: 25px;
+    color: #6d5555;
+    font-size: 16px;
+}
+
+.skill:hover {
+    background: #f5e5df;
+}
+
+
+/* Education */
+
+.education {
+    background: #f4f6ef;
+}
+
+.education-box {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-left: 5px solid #9eae8f;
+    border-radius: 10px;
+}
+
+.education-box h3 {
+    font-size: 24px;
+    color: #4d5947;
+    margin-bottom: 8px;
+}
+
+.education-box p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+
+/* Goals */
+
+.goals-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.goal {
+    width: 250px;
+    padding: 30px 25px;
+    background: white;
+    border: 1px solid #eadbd6;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.goal span {
+    font-size: 32px;
+}
+
+.goal h3 {
+    margin: 12px 0;
+    color: #634b4b;
+}
+
+.goal p {
+    color: #777;
+    font-size: 15px;
+}
+
+
+/* Contact */
+
+.contact {
+    background: #f8eee9;
+    text-align: center;
+}
+
+.contact p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.contact a {
+    color: #8f6060;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #493838;
+    color: white;
+    font-size: 14px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .home {
+        padding: 70px 8%;
+
+        /* NEW - PHOTO */
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* NEW - PHOTO */
+    .home-image {
+        width: 220px;
+        height: 220px;
+    }
+
+    .home h1 {
+        font-size: 48px;
+    }
+
+    .home h2 {
+        font-size: 21px;
+    }
+
+    .home p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 70px 8%;
+    }
+
+    .about-box {
+        padding: 25px;
+    }
+
+}
+```
